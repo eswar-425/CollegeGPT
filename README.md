@@ -94,22 +94,46 @@ In universities and higher education institutions, vital information is scattere
 
 ## 5. Screenshots
 
-| Screen | Description | Preview |
-| :--- | :--- | :--- |
-| **Home Page** | Interactive campus knowledge directory with 1-click student starter inquiries | ![Home Screen](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/home.png) |
-| **Grounded Chat & Citations** | Clean student chat interface with verified institutional source badges and page citations | ![Chat Interface](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/chat.png) |
-| **Student Registration** | Signup workflow with specific College / Institution selection | ![Registration](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/register.png) |
-| **Admin Knowledge Hub** | Ingestion pipeline dashboard with document status and chunk metrics | ![Admin Dashboard](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/admin.png) |
-| **Document Upload & Chunking** | Drag-and-drop file uploader with institutional scope tagging | ![Document Upload](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/upload.png) |
-| **Dual Theme System** | Seamless toggle between Emerald Dark Mode and Daylight Light Mode | ![Theme Comparison](https://raw.githubusercontent.com/placeholder-user/collegegpt/main/screenshots/themes.png) |
+### 🏠 1. Home Page & Interactive Campus Directory
+*Hero overview with institutional verification banner and instant student question starters.*
+
+![Home Screen](./screenshots/home.png)
+
+---
+
+### 💬 2. Grounded Chat Assistant & Topic Inquiries
+*Clean conversational interface with real-time prompt suggestions and department filters.*
+
+![Chat Assistant](./screenshots/chat.png)
+
+---
+
+### 📝 3. Student Registration with College Selection
+*Multi-tenant student registration capturing student name, college/institution, department, and credentials.*
+
+![Student Registration](./screenshots/register.png)
+
+---
+
+### 🛡️ 4. Administrator Hub & Knowledge Analytics
+*Centralized management console tracking document processing status, chunk embeddings, and student satisfaction metrics.*
+
+![Admin Hub](./screenshots/admin.png)
+
+---
+
+### 📤 5. Document Ingestion & Institutional Scope Tagging
+*Drag-and-drop file uploader with category, department, and specific college scope tagging.*
+
+![Upload Document](./screenshots/upload.png)
 
 ---
 
 ## 6. Live Demo
 
-- **Frontend Deployment (Vercel)**: [https://collegegpt-ai.vercel.app](https://collegegpt-ai.vercel.app)
-- **Source Code (GitHub)**: [https://github.com/your-username/collegegpt](https://github.com/your-username/collegegpt)
-- **Live Interactive Demo**: Access the web application, create a student account with your college name, and ask questions with real-time grounded source citations.
+- **Frontend Deployment (Vercel)**: [https://college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app)
+- **Source Code (GitHub)**: [https://github.com/eswar-425/CollegeGPT](https://github.com/eswar-425/CollegeGPT)
+- **Live Interactive Demo**: Access the web application at [https://college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app), create a student account with your college name, and ask questions with real-time grounded source citations.
 
 ---
 
@@ -122,9 +146,9 @@ In universities and higher education institutions, vital information is scattere
 
 | Layer | Platform | Purpose | Link / Config |
 | :--- | :--- | :--- | :--- |
-| **Frontend Web App** | **Vercel** | SPA Hosting, Global Edge CDN, SSL, Continuous Deployment | [collegegpt-ai.vercel.app](https://collegegpt-ai.vercel.app) |
+| **Frontend Web App** | **Vercel** | SPA Hosting, Global Edge CDN, SSL, Continuous Deployment | [college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app) |
 | **Backend API & RAG Engine** | **Render** | Node.js Web Service, Ingestion Pipeline, Vector Search | [collegegpt-api.onrender.com](https://collegegpt-api.onrender.com) |
-| **Source Code & CI/CD** | **GitHub** | Version Control, Automated Deployments & Collaboration | [github.com/your-username/collegegpt](https://github.com/your-username/collegegpt) |
+| **Source Code & CI/CD** | **GitHub** | Version Control, Automated Deployments & Collaboration | [github.com/eswar-425/CollegeGPT](https://github.com/eswar-425/CollegeGPT) |
 | **Database (Optional)** | **MongoDB Atlas** | Cloud NoSQL DB for document chunk metadata & users | Cloud Cluster |
 
 ---

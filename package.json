@@ -23,6 +23,11 @@
     "react",
     "nodejs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eswar-425/CollegeGPT.git"
+  },
+  "homepage": "https://college-gpt-olive.vercel.app",
   "author": "CollegeGPT Team",
   "license": "MIT",
   "devDependencies": {
