@@ -48,14 +48,14 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-[85vh] flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl backdrop-blur-xl animate-fade-in transition-colors duration-200">
+    <div className="min-h-[85vh] flex items-center justify-center px-4 py-8 sm:py-12">
+      <div className="w-full max-w-md bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl dark:shadow-2xl backdrop-blur-xl animate-fade-in transition-colors duration-200">
         {/* Brand Header */}
-        <div className="text-center mb-8">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-500 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-500/20">
-            <GraduationCap className="w-7 h-7 text-white" />
+        <div className="text-center mb-6 sm:mb-8">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-500 flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-lg shadow-brand-500/20">
+            <GraduationCap className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">Sign in to CollegeGPT</h1>
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">Sign in to CollegeGPT</h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Access your college information assistant</p>
         </div>
 

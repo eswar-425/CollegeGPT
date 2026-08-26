@@ -88,22 +88,22 @@ export default function Home() {
         </div>
 
         {/* Hero Title */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
           Your Campus Information, <br />
           <span className="gradient-text">Accurate & Verified with Citations</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        <p className="text-sm sm:text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
           CollegeGPT provides instant answers for students and faculty. Query official
           academic regulations, fee handbooks, hostel policies, and exam schedules with zero guesswork.
         </p>
 
         {/* CTA Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto mb-16 w-full">
           <Link
             to={isAuthenticated ? '/chat' : '/login'}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-bold text-sm shadow-xl shadow-brand-600/30 flex items-center justify-center gap-2 transition-all hover:scale-102 active:scale-98"
+            className="w-full sm:w-auto px-7 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-gradient-to-r from-brand-600 to-teal-500 hover:from-brand-500 hover:to-teal-400 text-white font-bold text-sm shadow-xl shadow-brand-600/30 flex items-center justify-center gap-2 transition-all hover:scale-102 active:scale-98"
           >
             <MessageSquare className="w-4 h-4" />
             <span>{isAuthenticated ? 'Open Campus Assistant' : 'Start Asking Questions'}</span>

@@ -82,12 +82,14 @@ export default function Chat() {
   const handleNewChat = () => {
     setActiveConversationId(null);
     setMessages([]);
+    if (window.innerWidth < 768) setSidebarOpen(false);
     navigate('/chat');
   };
 
   // Select existing chat
   const handleSelectConversation = (id) => {
     setActiveConversationId(id);
+    if (window.innerWidth < 768) setSidebarOpen(false);
     navigate(`/chat/${id}`);
   };
 
@@ -171,12 +173,21 @@ export default function Chat() {
   };
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] bg-slate-50 dark:bg-[#08100D] overflow-hidden transition-colors duration-200">
+    <div className="flex h-[calc(100vh-4rem)] bg-slate-50 dark:bg-[#08100D] overflow-hidden transition-colors duration-200 relative">
+      {/* Mobile Backdrop Overlay */}
+      {sidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          className="fixed inset-0 bg-black/60 backdrop-blur-xs z-20 md:hidden transition-opacity"
+          aria-hidden="true"
+        />
+      )}
+
       {/* Sidebar (Desktop + Mobile Toggle) */}
       <div
         className={`${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0 md:w-0 md:border-none'
-        } transition-all duration-300 z-30 fixed md:static inset-y-16 md:inset-auto h-[calc(100vh-4rem)]`}
+        } transition-all duration-300 z-30 fixed md:static inset-y-16 md:inset-auto h-[calc(100vh-4rem)] shadow-2xl md:shadow-none`}
       >
         {sidebarOpen && (
           <Sidebar

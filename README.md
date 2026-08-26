@@ -133,7 +133,14 @@ In universities and higher education institutions, vital information is scattere
 
 - **Frontend Deployment (Vercel)**: [https://college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app)
 - **Source Code (GitHub)**: [https://github.com/eswar-425/CollegeGPT](https://github.com/eswar-425/CollegeGPT)
-- **Live Interactive Demo**: Access the web application at [https://college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app), create a student account with your college name, and ask questions with real-time grounded source citations.
+- **Live Interactive Demo**: Access the web application at [https://college-gpt-olive.vercel.app](https://college-gpt-olive.vercel.app), sign in with the credentials below, or register a new student account with your college name.
+
+### 🔑 Demo & Admin Credentials
+
+| Role | Email | Password | Access Privileges |
+| :--- | :--- | :--- | :--- |
+| **👑 Administrator** | `admin@college.edu` | `Admin@12345` | Full access to Admin Hub, Document Ingestion, Semantic Chunk Inspector, Analytics & Diagnostics |
+| **🎓 Student** | `student@college.edu` | `Student@12345` | Grounded RAG Chat Assistant, Verified Citations, Topic Starters & Response Feedback |
 
 ---
 
