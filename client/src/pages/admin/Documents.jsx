@@ -142,9 +142,9 @@ export default function Documents() {
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4 shadow-sm dark:shadow-lg">
+      <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 shadow-sm dark:shadow-lg">
         {/* Search Form */}
-        <form onSubmit={handleSearchSubmit} className="flex-1 min-w-[240px] relative">
+        <form onSubmit={handleSearchSubmit} className="w-full sm:flex-1 relative">
           <Search className="w-4 h-4 text-slate-400 dark:text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"

@@ -9,6 +9,10 @@ import {
   Clock,
   ExternalLink,
   Eye,
+  Building2,
+  Tag,
+  Calendar,
+  School,
 } from 'lucide-react';
 import ChunkViewerModal from './ChunkViewerModal';
 import { documentApi } from '../../services/api';
@@ -68,38 +72,129 @@ export default function DocumentTable({
     }
   };
 
+  if (isLoading) {
+    return (
+      <div className="w-full bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-2xl p-12 text-center shadow-sm">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <div className="w-6 h-6 border-2 border-brand-500 border-t-transparent rounded-full animate-spin" />
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Loading documents...</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (documents.length === 0) {
+    return (
+      <div className="w-full bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-2xl p-12 text-center text-slate-500 dark:text-slate-400 text-xs sm:text-sm">
+        No documents found in knowledge base. Upload one to start indexing!
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm dark:shadow-xl transition-colors duration-200">
-      <div className="overflow-x-auto">
-        <table className="w-full text-left text-sm text-slate-700 dark:text-slate-300">
-          <thead className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200 dark:border-slate-800 text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold">
-            <tr>
-              <th scope="col" className="px-5 py-4">Document</th>
-              <th scope="col" className="px-4 py-4">Category & Department</th>
-              <th scope="col" className="px-4 py-4">Status</th>
-              <th scope="col" className="px-4 py-4">Chunks</th>
-              <th scope="col" className="px-4 py-4">Uploaded</th>
-              <th scope="col" className="px-5 py-4 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-slate-200 dark:divide-slate-800/60">
-            {isLoading ? (
-              <tr>
-                <td colSpan={6} className="text-center py-12 text-slate-500">
-                  <div className="flex items-center justify-center gap-2">
-                    <div className="w-4 h-4 border-2 border-brand-500 border-t-transparent rounded-full animate-spin" />
-                    <span>Loading documents...</span>
+    <div className="w-full space-y-4">
+      {/* Mobile View: Responsive Document Cards (< md) */}
+      <div className="block md:hidden space-y-3.5">
+        {documents.map((doc) => (
+          <div
+            key={doc._id}
+            className="p-4 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3"
+          >
+            {/* Header: Title & Status */}
+            <div className="flex items-start justify-between gap-2.5">
+              <div className="flex items-start gap-2.5 min-w-0">
+                <div className="p-2 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20 shrink-0 mt-0.5">
+                  <FileText className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-sm text-slate-900 dark:text-white leading-tight break-words">
+                    {doc.name}
+                  </h4>
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono mt-0.5 truncate">
+                    {doc.originalName} • {doc.fileType?.toUpperCase()}
                   </div>
-                </td>
-              </tr>
-            ) : documents.length === 0 ? (
+                </div>
+              </div>
+              <div className="shrink-0">{getStatusBadge(doc.status)}</div>
+            </div>
+
+            {/* Error Message if any */}
+            {doc.errorMessage && (
+              <div className="p-2 rounded-lg bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900 text-xs text-rose-600 dark:text-rose-300">
+                {doc.errorMessage}
+              </div>
+            )}
+
+            {/* Tags & Metadata */}
+            <div className="grid grid-cols-2 gap-2 pt-1 border-t border-slate-100 dark:border-slate-800/60 text-xs">
+              <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 truncate">
+                <Tag className="w-3.5 h-3.5 text-brand-500 shrink-0" />
+                <span className="truncate">{doc.category || 'General'}</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 truncate">
+                <Building2 className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
+                <span className="truncate">{doc.department || 'General'}</span>
+              </div>
+              {doc.collegeName && (
+                <div className="col-span-2 flex items-center gap-1.5 text-slate-600 dark:text-slate-400 truncate">
+                  <School className="w-3.5 h-3.5 text-teal-500 shrink-0" />
+                  <span className="truncate">{doc.collegeName}</span>
+                </div>
+              )}
+            </div>
+
+            {/* Actions & Chunk Info */}
+            <div className="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800/60">
+              <button
+                onClick={() => handleViewChunks(doc)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 dark:hover:bg-brand-900/30 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-colors"
+              >
+                <Layers className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
+                <span>{doc.chunkCount || 0} Chunks</span>
+              </button>
+
+              <div className="flex items-center gap-1.5">
+                <button
+                  onClick={() => onReprocess(doc._id)}
+                  disabled={doc.status === 'PROCESSING'}
+                  className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 text-slate-600 dark:text-slate-300 hover:text-brand-600 border border-slate-200 dark:border-slate-700 transition-all disabled:opacity-50"
+                  title="Reprocess Document"
+                >
+                  <RotateCw className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  onClick={() => {
+                    if (window.confirm(`Delete document "${doc.name}"?`)) {
+                      onDelete(doc._id);
+                    }
+                  }}
+                  className="p-2 rounded-xl bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/60 hover:bg-rose-100 transition-all"
+                  title="Delete Document"
+                >
+                  <Trash2 className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop / Tablet View: Full Data Table (>= md) */}
+      <div className="hidden md:block w-full bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm dark:shadow-xl transition-colors duration-200">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm text-slate-700 dark:text-slate-300">
+            <thead className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200 dark:border-slate-800 text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold">
               <tr>
-                <td colSpan={6} className="text-center py-12 text-slate-500">
-                  No documents found in knowledge base. Upload one to start!
-                </td>
+                <th scope="col" className="px-5 py-4">Document</th>
+                <th scope="col" className="px-4 py-4">Category & Scope</th>
+                <th scope="col" className="px-4 py-4">Status</th>
+                <th scope="col" className="px-4 py-4">Chunks</th>
+                <th scope="col" className="px-4 py-4">Uploaded</th>
+                <th scope="col" className="px-5 py-4 text-right">Actions</th>
               </tr>
-            ) : (
-              documents.map((doc) => (
+            </thead>
+            <tbody className="divide-y divide-slate-200 dark:divide-slate-800/60">
+              {documents.map((doc) => (
                 <tr key={doc._id} className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
                   {/* Document Name */}
                   <td className="px-5 py-4 min-w-[220px]">
@@ -118,11 +213,14 @@ export default function DocumentTable({
                     </div>
                   </td>
 
-                  {/* Category & Department */}
+                  {/* Category & Scope */}
                   <td className="px-4 py-4">
                     <div className="flex flex-col">
                       <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">{doc.category}</span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400">{doc.department}</span>
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 truncate">{doc.department}</span>
+                      {doc.collegeName && doc.collegeName !== 'General / All Colleges' && (
+                        <span className="text-[10px] text-brand-600 dark:text-brand-400 font-medium truncate">{doc.collegeName}</span>
+                      )}
                     </div>
                   </td>
 
@@ -157,32 +255,25 @@ export default function DocumentTable({
                     })}
                   </td>
 
-                  {/* Action Buttons */}
+                  {/* Actions */}
                   <td className="px-5 py-4 text-right">
                     <div className="flex items-center justify-end gap-1.5">
                       <button
-                        onClick={() => handleViewChunks(doc)}
-                        className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                        title="View Chunks"
-                      >
-                        <Eye className="w-4 h-4" />
-                      </button>
-
-                      <button
                         onClick={() => onReprocess(doc._id)}
-                        className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-300 hover:bg-brand-50 dark:hover:bg-brand-950/40 transition-colors"
+                        disabled={doc.status === 'PROCESSING'}
+                        className="p-1.5 rounded-lg text-slate-400 hover:text-brand-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors disabled:opacity-30"
                         title="Reprocess Document"
                       >
-                        <RotateCw className="w-4 h-4" />
+                        <RotateCw className={`w-4 h-4 ${doc.status === 'PROCESSING' ? 'animate-spin' : ''}`} />
                       </button>
 
                       <button
                         onClick={() => {
-                          if (window.confirm(`Delete "${doc.name}" and remove all vectors from the knowledge base?`)) {
+                          if (window.confirm(`Are you sure you want to delete "${doc.name}"?`)) {
                             onDelete(doc._id);
                           }
                         }}
-                        className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors"
+                        className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors"
                         title="Delete Document"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -190,18 +281,19 @@ export default function DocumentTable({
                     </div>
                   </td>
                 </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      {/* Chunk Inspection Modal */}
+      {/* Chunk Viewer Modal */}
       <ChunkViewerModal
         isOpen={chunkModalOpen}
         onClose={() => setChunkModalOpen(false)}
         document={selectedDoc}
         chunks={selectedChunks}
+        isLoading={loadingChunks}
       />
     </div>
   );
