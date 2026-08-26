@@ -75,12 +75,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#08100D] text-slate-900 dark:text-slate-100 flex flex-col selection:bg-brand-500 selection:text-white transition-colors duration-200">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-slate-50 dark:bg-[#08100D] text-slate-900 dark:text-slate-100 flex flex-col selection:bg-brand-500 selection:text-white transition-colors duration-200">
       {/* Background radial glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-brand-600/10 dark:from-brand-600/15 via-indigo-600/5 to-transparent blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] sm:h-[500px] bg-gradient-to-b from-brand-600/15 dark:from-brand-600/20 via-teal-600/5 to-transparent blur-3xl pointer-events-none -z-10" />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+      <section className="w-full pt-12 sm:pt-20 pb-10 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
         {/* Knowledge Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 dark:bg-brand-500/10 border border-brand-200 dark:border-brand-500/30 text-brand-600 dark:text-brand-400 text-xs font-semibold mb-8 animate-fade-in shadow-sm dark:shadow-none">
           <Sparkles className="w-3.5 h-3.5" />

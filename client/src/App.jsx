@@ -23,9 +23,9 @@ export default function App() {
       <ThemeProvider>
         <AuthProvider>
           <ToastProvider>
-            <div className="min-h-screen bg-slate-50 dark:bg-[#08100D] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+            <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-slate-50 dark:bg-[#08100D] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
               <Navbar />
-              <div className="flex-1 flex flex-col">
+              <div className="flex-1 w-full max-w-full flex flex-col">
               <Routes>
                 {/* Public Routes */}
                 <Route path="/" element={<Home />} />
