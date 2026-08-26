@@ -1,0 +1,953 @@
+{
+  "users": [
+    {
+      "_id": "uyz7ocdqmt9q8jnb",
+      "id": "clpqk843mt9q8jnb",
+      "name": "Dr. Sarah Jenkins (Dean / Admin)",
+      "email": "admin@college.edu",
+      "password": "$2b$10$MMQ9mnsv/291/ojVGqeKVOI35HXFh.MJxacoV3gAqwtUNp/JA3..y",
+      "role": "admin",
+      "department": "Academic Affairs",
+      "studentId": "",
+      "createdAt": "2026-08-26T06:42:42.167Z",
+      "updatedAt": "2026-08-26T06:42:42.167Z",
+      "lastLogin": "2026-08-26T06:42:42.167Z"
+    },
+    {
+      "_id": "vplvsrbwmt9q8jpq",
+      "id": "djpxom6kmt9q8jpq",
+      "name": "Alex Rivera",
+      "email": "student@college.edu",
+      "password": "$2b$10$ArXcMW0GKrIBUqZ33YcdT.Xu1b32kG1lzxoBDNuEsbwhERfOpuUOq",
+      "role": "student",
+      "department": "Computer Science",
+      "studentId": "CS-2026-084",
+      "createdAt": "2026-08-26T06:42:42.254Z",
+      "updatedAt": "2026-08-26T06:42:42.254Z",
+      "lastLogin": "2026-08-26T06:42:42.254Z"
+    }
+  ],
+  "documents": [
+    {
+      "_id": "021da3chmt9q8jpt",
+      "id": "ii7ge3mfmt9q8jpt",
+      "name": "Official Academic Regulations & Examination Rules 2026",
+      "originalName": "Academic_Regulations_2026.txt",
+      "fileUrl": "/uploads/seed-Academic_Regulations_2026.txt",
+      "fileType": "txt",
+      "fileSize": 3545,
+      "category": "Academics",
+      "department": "General / College-wide",
+      "academicYear": "2026-2027",
+      "status": "READY",
+      "uploadedBy": "uyz7ocdqmt9q8jnb",
+      "createdAt": "2026-08-26T06:42:42.258Z",
+      "updatedAt": "2026-08-26T06:45:15.995Z",
+      "chunkCount": 10,
+      "errorMessage": null
+    },
+    {
+      "_id": "bbdesq87mt9q8jqe",
+      "id": "xydwja1zmt9q8jqe",
+      "name": "Hostel Residence Policies & Fee Structure 2026",
+      "originalName": "Hostel_Rules_and_Fee_Structure.txt",
+      "fileUrl": "/uploads/seed-Hostel_Rules_and_Fee_Structure.txt",
+      "fileType": "txt",
+      "fileSize": 2852,
+      "category": "Hostel",
+      "department": "General / College-wide",
+      "academicYear": "2026-2027",
+      "status": "READY",
+      "uploadedBy": "uyz7ocdqmt9q8jnb",
+      "createdAt": "2026-08-26T06:42:42.278Z",
+      "updatedAt": "2026-08-26T06:45:16.008Z",
+      "chunkCount": 4,
+      "errorMessage": null
+    },
+    {
+      "_id": "6nkfddkamt9q8jqu",
+      "id": "0c8hqjd1mt9q8jqu",
+      "name": "Placement Guidelines, Internships & Scholarship Schemes",
+      "originalName": "Placement_and_Scholarships_Handbook.txt",
+      "fileUrl": "/uploads/seed-Placement_and_Scholarships_Handbook.txt",
+      "fileType": "txt",
+      "fileSize": 3081,
+      "category": "Placements",
+      "department": "General / College-wide",
+      "academicYear": "2026-2027",
+      "status": "READY",
+      "uploadedBy": "uyz7ocdqmt9q8jnb",
+      "createdAt": "2026-08-26T06:42:42.294Z",
+      "updatedAt": "2026-08-26T06:45:16.024Z",
+      "chunkCount": 9,
+      "errorMessage": null
+    },
+    {
+      "_id": "ms31xgljmt9q8jra",
+      "id": "g9haykaumt9q8jra",
+      "name": "Academic Departments, Course Catalog & Faculty Directory",
+      "originalName": "Department_and_Courses_Catalog.txt",
+      "fileUrl": "/uploads/seed-Department_and_Courses_Catalog.txt",
+      "fileType": "txt",
+      "fileSize": 2150,
+      "category": "Departments",
+      "department": "General / College-wide",
+      "academicYear": "2026-2027",
+      "status": "READY",
+      "uploadedBy": "uyz7ocdqmt9q8jnb",
+      "createdAt": "2026-08-26T06:42:42.310Z",
+      "updatedAt": "2026-08-26T06:45:16.037Z",
+      "chunkCount": 4,
+      "errorMessage": null
+    }
+  ],
+  "documentChunks": [
+    {
+      "_id": "szmffwuimt9qbuca",
+      "id": "dom156yumt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 0,
+      "text": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE",
+      "pageNumber": 1,
+      "tokenCount": 10,
+      "vectorId": "021da3chmt9q8jpt_chunk_0",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "77awcoldmt9qbuca",
+      "id": "a98fqoiomt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 1,
+      "text": "## OFFICIAL ACADEMIC REGULATIONS & EXAMINATION RULES (ACADEMIC YEAR 2026-2027)",
+      "pageNumber": 2,
+      "tokenCount": 13,
+      "vectorId": "021da3chmt9q8jpt_chunk_1",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "xftc61f6mt9qbuca",
+      "id": "mpsddyiumt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 2,
+      "text": "### 1. ATTENDANCE REQUIREMENTS\n\n1.1. Minimum Mandatory Attendance:\n\nEvery registered student is required to maintain a minimum attendance of 75% in aggregate of all lectures, practical sessions, tutorials, and laboratories conducted in each semester to be eligible for appearing in the End-Semester Final Examinations.\n\n\n1.2. Attendance Condonation on Medical Grounds:\n\nStudents having attendance between 65% and 74.9% may be considered for condonation of attendance shortage by the Academic Dean, strictly on valid medical grounds (hospitalization certificate certified by the Chief Medical Officer) or representation of the College in State/National sports and cultural events. A condonation fee of $50 / Rs. 1,500 per course applies.\n\n\n1.3. Detainment:",
+      "pageNumber": 3,
+      "tokenCount": 138,
+      "vectorId": "021da3chmt9q8jpt_chunk_2",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "77b4qm1omt9qbuca",
+      "id": "izmiahm8mt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 3,
+      "text": "Medical Officer) or representation of the College in State/National sports and cultural events. A condonation fee of $50 / Rs. 1,500 per course applies.\n\n\n1.3. Detainment:\n\nStudents who secure less than 65% aggregate attendance shall be detained in that semester and will NOT be allowed to appear for the End-Semester Examination under any circumstances. They must re-register for the entire semester with the subsequent batch upon paying the re-admission fees.",
+      "pageNumber": 3,
+      "tokenCount": 91,
+      "vectorId": "021da3chmt9q8jpt_chunk_3",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "m1mvpmbcmt9qbuca",
+      "id": "zft0nvbmmt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 4,
+      "text": "---",
+      "pageNumber": 4,
+      "tokenCount": 2,
+      "vectorId": "021da3chmt9q8jpt_chunk_4",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "ztypp8bxmt9qbuca",
+      "id": "9zw84g45mt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 5,
+      "text": "### 2. GRADING SYSTEM & EVALUATION SCHEME\n2.1. Assessment Split:\n- Continuous Internal Evaluation (CIE): 40%\n- Mid-Term Test 1: 15%\n- Mid-Term Test 2: 15%\n- Quizzes, Assignments, and Mini-Projects: 10%\n- Semester End Examination (SEE): 60%\n\n2.2. Letter Grades and Grade Points:\n- O (Outstanding): 90 - 100% | Grade Point: 10\n- A+ (Excellent): 80 - 89% | Grade Point: 9\n- A (Very Good): 70 - 79% | Grade Point: 8\n- B+ (Good): 60 - 69% | Grade Point: 7\n- B (Above Average): 55 - 59% | Grade Point: 6\n- C (Average): 50 - 54% | Grade Point: 5\n- P (Pass): 40 - 49% | Grade Point: 4\n- F (Fail / Absent): Below 40% | Grade Point: 0\n\n2.3. Minimum Passing Criteria:\nA student must secure at least 40% marks in SEE (24 out of 60) and 40% overall (CIE + SEE) to clear any course.",
+      "pageNumber": 5,
+      "tokenCount": 202,
+      "vectorId": "021da3chmt9q8jpt_chunk_5",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "x9vyuq6gmt9qbuca",
+      "id": "2bjqgyaemt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 6,
+      "text": "---",
+      "pageNumber": 6,
+      "tokenCount": 2,
+      "vectorId": "021da3chmt9q8jpt_chunk_6",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "yb1ipihkmt9qbuca",
+      "id": "8wt5wqejmt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 7,
+      "text": "### 3. SEMESTER EXAMINATIONS & ARREARS POLICY\n3.1. Examination Schedule:\n- Odd Semesters (I, III, V, VII): Theory examinations begin in the 3rd week of November. Practical exams commence in the 1st week of November.\n- Even Semesters (II, IV, VI, VIII): Theory examinations begin in the 3rd week of April. Practical exams commence in the 1st week of April.\n\n3.2. Backlog / Supplementary Exams:\nSupplementary examinations for backlogs are conducted during the summer break (June-July) and winter break (December-January). A student can register for a maximum of 4 backlog subjects in any single supplementary attempt.\n\n3.3. Revaluation and Script Verification:\nStudents dissatisfied with their evaluated semester exam answer scripts may apply for Photostat copy verification within 7 days of result declaration upon payment of $15 / Rs. 500 per subject. Formal re-evaluation request can be submitted within 14 days of result declaration.",
+      "pageNumber": 7,
+      "tokenCount": 186,
+      "vectorId": "021da3chmt9q8jpt_chunk_7",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "u5o4kqfjmt9qbuca",
+      "id": "kdkzle73mt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 8,
+      "text": "---",
+      "pageNumber": 8,
+      "tokenCount": 2,
+      "vectorId": "021da3chmt9q8jpt_chunk_8",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "x52pabzsmt9qbuca",
+      "id": "j9hxp2kemt9qbuca",
+      "documentId": "021da3chmt9q8jpt",
+      "chunkIndex": 9,
+      "text": "### 4. ADMISSION CRITERIA & DEGREE REQUIREMENTS\n4.1. Minimum Duration & Credits:\n- B.Tech / B.E. Program: 4 Years (8 Semesters). Minimum total credits required for graduation: 160 Credits.\n- M.Tech / M.S. Program: 2 Years (4 Semesters). Minimum total credits required for graduation: 68 Credits.\n- MBA Program: 2 Years (4 Semesters). Minimum total credits required for graduation: 72 Credits.\n\n4.2. Honors & Minor Degree Option:\nStudents with a CGPA >= 8.00 at the end of the 4th semester without any standing backlogs are eligible to register for an Honors degree or a specialized Minor degree by taking 18-20 additional credits across Semesters 5 to 8.",
+      "pageNumber": 9,
+      "tokenCount": 140,
+      "vectorId": "021da3chmt9q8jpt_chunk_9",
+      "metadata": {
+        "documentName": "Official Academic Regulations & Examination Rules 2026",
+        "category": "Academics",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:15.994Z"
+    },
+    {
+      "_id": "261br473mt9qbucn",
+      "id": "lx7suc4gmt9qbucn",
+      "documentId": "bbdesq87mt9q8jqe",
+      "chunkIndex": 0,
+      "text": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE\n\n## HOSTEL RESIDENCE POLICIES & ACADEMIC FEE STRUCTURE (2026-2027)\n\n\n### 1. ANNUAL TUITION & COLLEGE FEES\n\n1.1. Undergraduate B.Tech Programs:\n- Computer Science & Engineering (CSE / AI & ML / Data Science): $3,200 / Rs. 1,80,000 per academic year.\n- Electronics & Communication Engineering (ECE): $2,800 / Rs. 1,50,000 per academic year.\n- Mechanical & Civil Engineering: $2,400 / Rs. 1,20,000 per academic year.\n- Other Institutional Fees (Library, Laboratory, Internet, Sports): $400 / Rs. 25,000 annually.\n- One-time Refundable Caution Deposit: $200 / Rs. 10,000 (payable at time of admission).\n\n\n1.2. Postgraduate M.Tech & MBA Programs:\n- M.Tech (All Specializations): $2,200 / Rs. 1,10,000 per academic year.\n- MBA (General / FinTech / Analytics): $3,000 / Rs. 1,60,000 per academic year.",
+      "pageNumber": 1,
+      "tokenCount": 169,
+      "vectorId": "bbdesq87mt9q8jqe_chunk_0",
+      "metadata": {
+        "documentName": "Hostel Residence Policies & Fee Structure 2026",
+        "category": "Hostel",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.007Z"
+    },
+    {
+      "_id": "zg8p77ppmt9qbucn",
+      "id": "go1bwkivmt9qbucn",
+      "documentId": "bbdesq87mt9q8jqe",
+      "chunkIndex": 1,
+      "text": "MBA Programs:\n- M.Tech (All Specializations): $2,200 / Rs. 1,10,000 per academic year.\n- MBA (General / FinTech / Analytics): $3,000 / Rs. 1,60,000 per academic year.\n\n\n1.3. Fee Payment Deadlines:\n- Autumn / Odd Semester Fee: Must be deposited by July 31st.\n- Spring / Even Semester Fee: Must be deposited by January 15th.\n- Late fee penalty of $5 / Rs. 200 per day applies for the first 15 days of delay. After 15 days, student portal access is temporarily frozen.\n---\n\n\n### 2. HOSTEL ACCOMMODATION & MESS CHARGES\n\n2.1. Hostel Room Categories & Annual Charges:\n- Premium Single Occupancy (AC with Attached Bath): $1,600 / Rs. 95,000 per year.\n- Double Occupancy (AC with Attached Bath): $1,200 / Rs. 75,000 per year.\n- Double Occupancy (Non-AC with Shared Bath): $850 / Rs. 55,000 per year.\n- Triple Occupancy (Non-AC with Shared Bath): $650 / Rs. 42,000 per year.",
+      "pageNumber": 1,
+      "tokenCount": 197,
+      "vectorId": "bbdesq87mt9q8jqe_chunk_1",
+      "metadata": {
+        "documentName": "Hostel Residence Policies & Fee Structure 2026",
+        "category": "Hostel",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.007Z"
+    },
+    {
+      "_id": "3p4kib42mt9qbucn",
+      "id": "9uevw125mt9qbucn",
+      "documentId": "bbdesq87mt9q8jqe",
+      "chunkIndex": 2,
+      "text": "year.\n- Double Occupancy (Non-AC with Shared Bath): $850 / Rs. 55,000 per year.\n- Triple Occupancy (Non-AC with Shared Bath): $650 / Rs. 42,000 per year.\n\n\n2.2. Mess / Dining Charges:\n- Vegetarian & Non-Vegetarian Combined Meal Plan (Breakfast, Lunch, Evening Snacks, Dinner): $900 / Rs. 52,000 per academic year.\n- Pure Vegetarian Diet Plan: $800 / Rs. 46,000 per academic year.\n- Mess fee is payable in two equal half-yearly installments.\n---\n\n\n### 3. HOSTEL REGULATIONS & CODE OF CONDUCT\n\n3.1. Curfew Timings:\n- In-campus hostel entry deadline: 9:30 PM on weekdays (Sunday to Thursday).\n- Extended weekend deadline: 10:30 PM on Friday and Saturday with prior digital pass approval.\n- Night biometric attendance is conducted strictly at 10:00 PM daily.\n\n\n3.2. Outstation Night Passes:",
+      "pageNumber": 1,
+      "tokenCount": 166,
+      "vectorId": "bbdesq87mt9q8jqe_chunk_2",
+      "metadata": {
+        "documentName": "Hostel Residence Policies & Fee Structure 2026",
+        "category": "Hostel",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.007Z"
+    },
+    {
+      "_id": "38ab8jvnmt9qbucn",
+      "id": "ioxw0u2omt9qbucn",
+      "documentId": "bbdesq87mt9q8jqe",
+      "chunkIndex": 3,
+      "text": "deadline: 10:30 PM on Friday and Saturday with prior digital pass approval.\n- Night biometric attendance is conducted strictly at 10:00 PM daily.\n\n\n3.2. Outstation Night Passes:\n\nStudents intending to stay overnight outside the campus or visit hometown must submit an e-pass request through the Student ERP portal at least 24 hours in advance, followed by digital OTP approval from registered parents/guardians.\n3.3. Zero-Tolerance Policies:\n- Ragging in any form is strictly prohibited under the Supreme Court mandate and leads to immediate expulsion and police reporting.\n- Possession or consumption of alcohol, tobacco, narcotics, or prohibited substances within hostel/campus premises results in permanent rustication.\n- Electrical appliances such as immersion heaters, induction cookers, and electric irons are not permitted in hostel rooms for fire safety reasons.",
+      "pageNumber": 1,
+      "tokenCount": 164,
+      "vectorId": "bbdesq87mt9q8jqe_chunk_3",
+      "metadata": {
+        "documentName": "Hostel Residence Policies & Fee Structure 2026",
+        "category": "Hostel",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.007Z"
+    },
+    {
+      "_id": "m7elixysmt9qbud3",
+      "id": "hyzzf1m5mt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 0,
+      "text": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE",
+      "pageNumber": 1,
+      "tokenCount": 10,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_0",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "jrxebxdwmt9qbud3",
+      "id": "ztenz2lkmt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 1,
+      "text": "## PLACEMENT GUIDELINES, INTERNSHIP POLICIES & SCHOLARSHIP SCHEMES (2026-2027)",
+      "pageNumber": 2,
+      "tokenCount": 12,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_1",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "rmfyqyhtmt9qbud3",
+      "id": "3cqrxgzkmt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 2,
+      "text": "### 1. CAMPUS RECRUITMENT TRAINING & PLACEMENT ELIGIBILITY\n\n1.1. Placement Eligibility Criteria:\n- Minimum overall CGPA: 6.50 without any active backlogs at the commencement of the 7th semester placement season.\n- Minimum 85% attendance in mandatory Campus Recruitment Training (CRT) modules covering Data Structures & Algorithms, Aptitude, System Design, and Soft Skills.\n- Completion of at least one verified industrial internship of minimum 6 weeks duration.",
+      "pageNumber": 3,
+      "tokenCount": 86,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_2",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "vq00xmj5mt9qbud3",
+      "id": "a9k85bu4mt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 3,
+      "text": "modules covering Data Structures & Algorithms, Aptitude, System Design, and Soft Skills.\n- Completion of at least one verified industrial internship of minimum 6 weeks duration.\n\n\n1.2. Placement Policy (Dream & Super-Dream Offers):\n- Tier 1 (Core / Standard Offer): Annual CTC up to $10,000 / Rs. 8,00,000 per annum.\n- Tier 2 (Dream Offer): Annual CTC between $10,000 and $20,000 / Rs. 8,00,000 - Rs. 16,00,000.\n- Tier 3 (Super Dream Offer): Annual CTC exceeding $20,000 / Rs. 16,00,000 per annum.\n- Policy Rule: A student who secures a Tier 1 offer remains eligible to interview for Tier 2 or Tier 3 companies. Once a student receives a Super Dream offer, they are placed in the \"Final Placed\" category and cannot apply for additional campus drives to allow other students fair opportunities.",
+      "pageNumber": 3,
+      "tokenCount": 173,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_3",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "q3u06zytmt9qbud3",
+      "id": "i8bvgpncmt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 4,
+      "text": "---",
+      "pageNumber": 4,
+      "tokenCount": 2,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_4",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "kog240mrmt9qbud3",
+      "id": "wfm1blx1mt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 5,
+      "text": "### 2. INSTITUTIONAL SCHOLARSHIPS & FINANCIAL ASSISTANCE\n\n2.1. Merit-Based Scholarships:\n- Chairman's Presidential Fellowship: 100% tuition fee waiver for top 5 rank holders in State/National entrance examinations or students maintaining a CGPA >= 9.75.\n- Dean's Merit Excellence Award: 50% tuition fee waiver for students maintaining a CGPA between 9.25 and 9.74 in the preceding academic year.\n- Academic Merit Scholarship: 25% tuition fee waiver for students maintaining a CGPA between 8.75 and 9.24.",
+      "pageNumber": 5,
+      "tokenCount": 97,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_5",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "2o3p5n9hmt9qbud3",
+      "id": "03snqnafmt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 6,
+      "text": "between 9.25 and 9.74 in the preceding academic year.\n- Academic Merit Scholarship: 25% tuition fee waiver for students maintaining a CGPA between 8.75 and 9.24.\n\n\n2.2. Need-Based & Special Category Scholarships:\n- Economically Weaker Section (EWS) Grant: Up to 50% tuition waiver for students with certified annual family income below $3,500 / Rs. 2,50,000.\n- Women in STEM Leadership Grant: $1,000 / Rs. 50,000 annual grant awarded to top female engineering innovators in Computer Science and Robotics.\n- Sports & Cultural National Champions Grant: Up to 75% tuition and hostel fee waiver for students representing the country/state in recognized federations.\n2.3. How to Apply:\n\nScholarship application forms are released on the Student ERP portal every year between August 1st and August 31st. Required verification documents include previous semester grade sheets, family income certificate issued by the Revenue Authority, and bank account details.",
+      "pageNumber": 5,
+      "tokenCount": 186,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_6",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "ve8fnluimt9qbud3",
+      "id": "waga19bymt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 7,
+      "text": "---",
+      "pageNumber": 6,
+      "tokenCount": 2,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_7",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "18pxeonjmt9qbud3",
+      "id": "chmxseydmt9qbud3",
+      "documentId": "6nkfddkamt9q8jqu",
+      "chunkIndex": 8,
+      "text": "### 3. LIBRARY RESOURCES & TIMINGS\n3.1. Central Digital Library Working Hours:\n- Regular Semester Working Hours: Monday to Saturday from 8:00 AM to 10:00 PM.\n- Examination Period Working Hours: Open 24/7 with round-the-clock air conditioning, quiet study zones, and high-speed Wi-Fi.\n- Sunday & Public Holidays: 9:00 AM to 5:00 PM.\n\n3.2. Borrowing Privileges:\n- Undergraduate Students: 4 books for a loan duration of 14 days (renewable twice).\n- Postgraduate Students: 6 books for a loan duration of 30 days.\n- Overdue fine: $0.20 / Rs. 10 per day per book after the due date.",
+      "pageNumber": 7,
+      "tokenCount": 127,
+      "vectorId": "6nkfddkamt9q8jqu_chunk_8",
+      "metadata": {
+        "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+        "category": "Placements",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.023Z"
+    },
+    {
+      "_id": "fl6eqlqamt9qbudg",
+      "id": "rlznxm3umt9qbudg",
+      "documentId": "ms31xgljmt9q8jra",
+      "chunkIndex": 0,
+      "text": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE\n\n## ACADEMIC DEPARTMENTS, COURSE CATALOG & CONTACT DIRECTORY (2026-2027)\n\n\n### 1. DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (CSE)\n- Head of Department: Dr. Robert Vance (Office: Block A, Room 304, Email: hod.cse@apexcollege.edu)\n- Offered Programs:\n- B.Tech in Computer Science & Engineering (Intake: 240 seats)\n- B.Tech in Artificial Intelligence & Machine Learning (Intake: 120 seats)\n- B.Tech in Cyber Security & Data Privacy (Intake: 60 seats)\n- M.Tech in Advanced Software Systems (Intake: 30 seats)\n- Core Laboratories: High Performance Computing Lab, NVIDIA Deep Learning Studio, IoT & Embedded Systems Lab, Cloud Virtualization Center.\n\n\n---",
+      "pageNumber": 1,
+      "tokenCount": 134,
+      "vectorId": "ms31xgljmt9q8jra_chunk_0",
+      "metadata": {
+        "documentName": "Academic Departments, Course Catalog & Faculty Directory",
+        "category": "Departments",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.036Z"
+    },
+    {
+      "_id": "udrww423mt9qbudg",
+      "id": "0rw6ldbamt9qbudg",
+      "documentId": "ms31xgljmt9q8jra",
+      "chunkIndex": 1,
+      "text": "in Advanced Software Systems (Intake: 30 seats)\n- Core Laboratories: High Performance Computing Lab, NVIDIA Deep Learning Studio, IoT & Embedded Systems Lab, Cloud Virtualization Center.\n\n\n---\n\n\n### 2. DEPARTMENT OF ELECTRONICS & COMMUNICATION ENGINEERING (ECE)\n- Head of Department: Dr. Sophia Martinez (Office: Block B, Room 201, Email: hod.ece@apexcollege.edu)\n- Offered Programs:\n- B.Tech in Electronics & Communication Engineering (Intake: 180 seats)\n- B.Tech in VLSI Design & Microelectronics (Intake: 60 seats)\n- M.Tech in Embedded Systems & IoT (Intake: 24 seats)\n- Core Laboratories: Cadence VLSI Research Lab, Microwave & RF Testing Lab, Signal Processing Lab.\n---",
+      "pageNumber": 1,
+      "tokenCount": 129,
+      "vectorId": "ms31xgljmt9q8jra_chunk_1",
+      "metadata": {
+        "documentName": "Academic Departments, Course Catalog & Faculty Directory",
+        "category": "Departments",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.036Z"
+    },
+    {
+      "_id": "xde9cpgqmt9qbudg",
+      "id": "11i7t6xxmt9qbudg",
+      "documentId": "ms31xgljmt9q8jra",
+      "chunkIndex": 2,
+      "text": "60 seats)\n- M.Tech in Embedded Systems & IoT (Intake: 24 seats)\n- Core Laboratories: Cadence VLSI Research Lab, Microwave & RF Testing Lab, Signal Processing Lab.\n---\n\n\n### 3. DEPARTMENT OF MECHANICAL ENGINEERING (ME)\n- Head of Department: Dr. Alan Turing (Office: Block C, Room 102, Email: hod.mech@apexcollege.edu)\n- Offered Programs:\n- B.Tech in Mechanical Engineering (Intake: 120 seats)\n- B.Tech in Robotics & Industrial Automation (Intake: 60 seats)\n- Core Laboratories: Advanced CNC Machining Center, Additive Manufacturing & 3D Printing Lab, Thermal Engineering & Wind Tunnel Lab.\n---",
+      "pageNumber": 1,
+      "tokenCount": 117,
+      "vectorId": "ms31xgljmt9q8jra_chunk_2",
+      "metadata": {
+        "documentName": "Academic Departments, Course Catalog & Faculty Directory",
+        "category": "Departments",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.036Z"
+    },
+    {
+      "_id": "m1eamg81mt9qbudg",
+      "id": "9jny43vlmt9qbudg",
+      "documentId": "ms31xgljmt9q8jra",
+      "chunkIndex": 3,
+      "text": "Robotics & Industrial Automation (Intake: 60 seats)\n- Core Laboratories: Advanced CNC Machining Center, Additive Manufacturing & 3D Printing Lab, Thermal Engineering & Wind Tunnel Lab.\n---\n\n\n### 4. KEY ADMINISTRATIVE CONTACTS\n- Dean of Academic Affairs: Dr. Eleanor Vance (dean.academics@apexcollege.edu)\n- Controller of Examinations (COE): Prof. Arthur Pendelton (coe@apexcollege.edu)\n- Chief Hostel Warden (Boys): Dr. Marcus Brown (warden.boys@apexcollege.edu)\n- Chief Hostel Warden (Girls): Dr. Priya Sharma (warden.girls@apexcollege.edu)\n- Training & Placement Officer (TPO): Mr. David Miller (placements@apexcollege.edu)\n- Student Welfare Grievance Cell: grievance@apexcollege.edu / Emergency Toll-Free: 1800-456-7890",
+      "pageNumber": 1,
+      "tokenCount": 115,
+      "vectorId": "ms31xgljmt9q8jra_chunk_3",
+      "metadata": {
+        "documentName": "Academic Departments, Course Catalog & Faculty Directory",
+        "category": "Departments",
+        "department": "General / College-wide",
+        "academicYear": "2026-2027"
+      },
+      "createdAt": "2026-08-26T06:45:16.036Z"
+    }
+  ],
+  "conversations": [
+    {
+      "_id": "yso6mfxxmt9q8jrp",
+      "id": "2t8ghl70mt9q8jrp",
+      "userId": "vplvsrbwmt9q8jpq",
+      "title": "Attendance and Supplementary Exam Inquiries",
+      "createdAt": "2026-08-26T06:42:42.325Z",
+      "updatedAt": "2026-08-26T06:42:42.325Z",
+      "lastMessageAt": "2026-08-26T06:42:42.325Z"
+    },
+    {
+      "_id": "vmhutky8mt9qc24m",
+      "id": "5bqusajlmt9qc24m",
+      "userId": "vplvsrbwmt9q8jpq",
+      "title": "What is the minimum attendance required for s...",
+      "lastMessageAt": "2026-08-26T06:45:26.086Z",
+      "createdAt": "2026-08-26T06:45:26.086Z",
+      "updatedAt": "2026-08-26T06:45:26.086Z"
+    },
+    {
+      "_id": "gvpropbjmt9qc24x",
+      "id": "8ng6op5ymt9qc24x",
+      "userId": "vplvsrbwmt9q8jpq",
+      "title": "What are the hostel room categories and annua...",
+      "lastMessageAt": "2026-08-26T06:45:26.097Z",
+      "createdAt": "2026-08-26T06:45:26.097Z",
+      "updatedAt": "2026-08-26T06:45:26.097Z"
+    },
+    {
+      "_id": "spiw6ufcmt9qc256",
+      "id": "fvm4jly3mt9qc256",
+      "userId": "vplvsrbwmt9q8jpq",
+      "title": "Who won the 2022 FIFA football world champion...",
+      "lastMessageAt": "2026-08-26T06:45:26.106Z",
+      "createdAt": "2026-08-26T06:45:26.106Z",
+      "updatedAt": "2026-08-26T06:45:26.106Z"
+    },
+    {
+      "_id": "nsrrp9x7mt9qhs77",
+      "id": "9ypnqk55mt9qhs77",
+      "userId": "vplvsrbwmt9q8jpq",
+      "title": "What is the minimum attendance required for s...",
+      "lastMessageAt": "2026-08-26T06:49:53.155Z",
+      "createdAt": "2026-08-26T06:49:53.155Z",
+      "updatedAt": "2026-08-26T06:49:53.155Z"
+    }
+  ],
+  "messages": [
+    {
+      "_id": "873eisnhmt9q8jrq",
+      "id": "utcbqvulmt9q8jrq",
+      "conversationId": "yso6mfxxmt9q8jrp",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "user",
+      "content": "What is the minimum attendance required for semester examinations?",
+      "createdAt": "2026-08-26T06:42:42.326Z",
+      "updatedAt": "2026-08-26T06:42:42.326Z"
+    },
+    {
+      "_id": "d32hblbpmt9q8jrr",
+      "id": "o61wf04fmt9q8jrr",
+      "conversationId": "yso6mfxxmt9q8jrp",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "assistant",
+      "content": "Based on the official **Official Academic Regulations & Examination Rules 2026** (Page 1):\n\nEvery registered student is required to maintain a minimum attendance of **75% in aggregate** across all lectures, tutorials, and laboratories conducted in each semester to be eligible for End-Semester Final Examinations.\n\nStudents with attendance between 65% and 74.9% may apply for medical condonation with valid documentation from the Chief Medical Officer upon paying a condonation fee of $50 / Rs. 1,500.\n\n*(Source: Official Academic Regulations & Examination Rules 2026, Page 1)*",
+      "sources": [
+        {
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 1,
+          "category": "Academics",
+          "snippet": "Minimum Mandatory Attendance: Every registered student is required to maintain a minimum attendance of 75%...",
+          "score": 0.94
+        }
+      ],
+      "retrievalMetadata": {
+        "chunksRetrieved": 3,
+        "provider": "CollegeGPT RAG",
+        "responseTimeMs": 120,
+        "fallbackUsed": false
+      },
+      "createdAt": "2026-08-26T06:42:42.327Z",
+      "updatedAt": "2026-08-26T06:42:42.327Z"
+    },
+    {
+      "_id": "krwn3r43mt9qc24n",
+      "id": "knxknm9qmt9qc24n",
+      "conversationId": "vmhutky8mt9qc24m",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "user",
+      "content": "What is the minimum attendance required for semester examinations?",
+      "createdAt": "2026-08-26T06:45:26.087Z",
+      "updatedAt": "2026-08-26T06:45:26.087Z"
+    },
+    {
+      "_id": "t51akepwmt9qc24r",
+      "id": "ff8iucqlmt9qc24r",
+      "conversationId": "vmhutky8mt9qc24m",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "assistant",
+      "content": "Based on the official **Official Academic Regulations & Examination Rules 2026** (Page 9):\n\nMinimum Duration & Credits:\n- B.Tech / B.E.\n\nProgram: 4 Years (8 Semesters).\n\nMinimum total credits required for graduation: 160 Credits.\n\nProgram: 2 Years (4 Semesters).\n\n*(Source: Official Academic Regulations & Examination Rules 2026, Page 9)*",
+      "sources": [
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 9,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "### 4. ADMISSION CRITERIA & DEGREE REQUIREMENTS\n4.1. Minimum Duration & Credits:\n- B.Tech / B.E. Program: 4 Years (8 Semesters). Minimum total credits required for graduation: 160 ...",
+          "score": 0.502
+        },
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 3,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "### 1. ATTENDANCE REQUIREMENTS\n\n1.1. Minimum Mandatory Attendance:\n\nEvery registered student is required to maintain a minimum attendance of 75% in aggregate of all lectures, pract...",
+          "score": 0.496
+        },
+        {
+          "documentId": "6nkfddkamt9q8jqu",
+          "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+          "page": 3,
+          "category": "Placements",
+          "department": "General / College-wide",
+          "snippet": "### 1. CAMPUS RECRUITMENT TRAINING & PLACEMENT ELIGIBILITY\n\n1.1. Placement Eligibility Criteria:\n- Minimum overall CGPA: 6.50 without any active backlogs at the commencement of the...",
+          "score": 0.372
+        },
+        {
+          "documentId": "6nkfddkamt9q8jqu",
+          "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+          "page": 5,
+          "category": "Placements",
+          "department": "General / College-wide",
+          "snippet": "between 9.25 and 9.74 in the preceding academic year.\n- Academic Merit Scholarship: 25% tuition fee waiver for students maintaining a CGPA between 8.75 and 9.24.\n\n\n2.2. Need-Based ...",
+          "score": 0.347
+        },
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 3,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "Medical Officer) or representation of the College in State/National sports and cultural events. A condonation fee of $50 / Rs. 1,500 per course applies.\n\n\n1.3. Detainment:\n\nStudent...",
+          "score": 0.336
+        }
+      ],
+      "retrievalMetadata": {
+        "chunksRetrieved": 5,
+        "retrievalScoreMin": 0.23639515796981328,
+        "retrievalScoreMax": 0.3519036423997545,
+        "provider": "local-engine",
+        "modelUsed": "grounded-rag-synthesizer",
+        "responseTimeMs": 0,
+        "fallbackUsed": true
+      },
+      "createdAt": "2026-08-26T06:45:26.091Z",
+      "updatedAt": "2026-08-26T06:45:26.091Z"
+    },
+    {
+      "_id": "w3zggnb4mt9qc24y",
+      "id": "i8syd27xmt9qc24y",
+      "conversationId": "gvpropbjmt9qc24x",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "user",
+      "content": "What are the hostel room categories and annual charges?",
+      "createdAt": "2026-08-26T06:45:26.098Z",
+      "updatedAt": "2026-08-26T06:45:26.098Z"
+    },
+    {
+      "_id": "rwpmuyvnmt9qc250",
+      "id": "9k345x1kmt9qc250",
+      "conversationId": "gvpropbjmt9qc24x",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "assistant",
+      "content": "Based on the official **Hostel Residence Policies & Fee Structure 2026** (Page 1):\n\nHOSTEL ACCOMMODATION & MESS CHARGES\n\n\nHostel Room Categories & Annual Charges:\n- Premium Single Occupancy (AC with Attached Bath): $1,600 / Rs.\n\n*(Source: Hostel Residence Policies & Fee Structure 2026, Page 1)*",
+      "sources": [
+        {
+          "documentId": "bbdesq87mt9q8jqe",
+          "documentName": "Hostel Residence Policies & Fee Structure 2026",
+          "page": 1,
+          "category": "Hostel",
+          "department": "General / College-wide",
+          "snippet": "MBA Programs:\n- M.Tech (All Specializations): $2,200 / Rs. 1,10,000 per academic year.\n- MBA (General / FinTech / Analytics): $3,000 / Rs. 1,60,000 per academic year.\n\n\n1.3. Fee Pa...",
+          "score": 0.501
+        },
+        {
+          "documentId": "bbdesq87mt9q8jqe",
+          "documentName": "Hostel Residence Policies & Fee Structure 2026",
+          "page": 1,
+          "category": "Hostel",
+          "department": "General / College-wide",
+          "snippet": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE\n\n## HOSTEL RESIDENCE POLICIES & ACADEMIC FEE STRUCTURE (2026-2027)\n\n\n### 1. ANNUAL TUITION & COLLEGE FEES\n\n1.1. Undergraduate B.Tech Progra...",
+          "score": 0.335
+        },
+        {
+          "documentId": "6nkfddkamt9q8jqu",
+          "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+          "page": 5,
+          "category": "Placements",
+          "department": "General / College-wide",
+          "snippet": "between 9.25 and 9.74 in the preceding academic year.\n- Academic Merit Scholarship: 25% tuition fee waiver for students maintaining a CGPA between 8.75 and 9.24.\n\n\n2.2. Need-Based ...",
+          "score": 0.317
+        },
+        {
+          "documentId": "ms31xgljmt9q8jra",
+          "documentName": "Academic Departments, Course Catalog & Faculty Directory",
+          "page": 1,
+          "category": "Departments",
+          "department": "General / College-wide",
+          "snippet": "# APEX INSTITUTE OF TECHNOLOGY & SCIENCE\n\n## ACADEMIC DEPARTMENTS, COURSE CATALOG & CONTACT DIRECTORY (2026-2027)\n\n\n### 1. DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (CSE)\n- Head...",
+          "score": 0.31
+        },
+        {
+          "documentId": "bbdesq87mt9q8jqe",
+          "documentName": "Hostel Residence Policies & Fee Structure 2026",
+          "page": 1,
+          "category": "Hostel",
+          "department": "General / College-wide",
+          "snippet": "year.\n- Double Occupancy (Non-AC with Shared Bath): $850 / Rs. 55,000 per year.\n- Triple Occupancy (Non-AC with Shared Bath): $650 / Rs. 42,000 per year.\n\n\n2.2. Mess / Dining Charg...",
+          "score": 0.289
+        }
+      ],
+      "retrievalMetadata": {
+        "chunksRetrieved": 5,
+        "retrievalScoreMin": 0.23869963098913816,
+        "retrievalScoreMax": 0.30052580672245066,
+        "provider": "local-engine",
+        "modelUsed": "grounded-rag-synthesizer",
+        "responseTimeMs": 0,
+        "fallbackUsed": true
+      },
+      "createdAt": "2026-08-26T06:45:26.100Z",
+      "updatedAt": "2026-08-26T06:45:26.100Z"
+    },
+    {
+      "_id": "5qdi6hd8mt9qc257",
+      "id": "1uwu9v52mt9qc257",
+      "conversationId": "spiw6ufcmt9qc256",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "user",
+      "content": "Who won the 2022 FIFA football world championship?",
+      "createdAt": "2026-08-26T06:45:26.107Z",
+      "updatedAt": "2026-08-26T06:45:26.107Z"
+    },
+    {
+      "_id": "34yvdbasmt9qc258",
+      "id": "2rqvlxq2mt9qc258",
+      "conversationId": "spiw6ufcmt9qc256",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "assistant",
+      "content": "I couldn't find enough reliable information about that in the college knowledge base. Please check with the college administration or upload the relevant document.",
+      "sources": [],
+      "retrievalMetadata": {
+        "chunksRetrieved": 0,
+        "retrievalScoreMax": 0,
+        "fallbackUsed": true
+      },
+      "createdAt": "2026-08-26T06:45:26.108Z",
+      "updatedAt": "2026-08-26T06:45:26.108Z"
+    },
+    {
+      "_id": "nfujj8mhmt9qhs79",
+      "id": "5sw03gl1mt9qhs79",
+      "conversationId": "nsrrp9x7mt9qhs77",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "user",
+      "content": "What is the minimum attendance required for semester examinations?",
+      "createdAt": "2026-08-26T06:49:53.157Z",
+      "updatedAt": "2026-08-26T06:49:53.157Z"
+    },
+    {
+      "_id": "t6f5vppdmt9qhs7c",
+      "id": "s0dizwjfmt9qhs7c",
+      "conversationId": "nsrrp9x7mt9qhs77",
+      "userId": "vplvsrbwmt9q8jpq",
+      "role": "assistant",
+      "content": "Based on the official **Official Academic Regulations & Examination Rules 2026** (Page 9):\n\nMinimum Duration & Credits:\n- B.Tech / B.E.\n\nProgram: 4 Years (8 Semesters).\n\nMinimum total credits required for graduation: 160 Credits.\n\nProgram: 2 Years (4 Semesters).\n\n*(Source: Official Academic Regulations & Examination Rules 2026, Page 9)*",
+      "sources": [
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 9,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "### 4. ADMISSION CRITERIA & DEGREE REQUIREMENTS\n4.1. Minimum Duration & Credits:\n- B.Tech / B.E. Program: 4 Years (8 Semesters). Minimum total credits required for graduation: 160 ...",
+          "score": 0.502
+        },
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 3,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "### 1. ATTENDANCE REQUIREMENTS\n\n1.1. Minimum Mandatory Attendance:\n\nEvery registered student is required to maintain a minimum attendance of 75% in aggregate of all lectures, pract...",
+          "score": 0.496
+        },
+        {
+          "documentId": "6nkfddkamt9q8jqu",
+          "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+          "page": 3,
+          "category": "Placements",
+          "department": "General / College-wide",
+          "snippet": "### 1. CAMPUS RECRUITMENT TRAINING & PLACEMENT ELIGIBILITY\n\n1.1. Placement Eligibility Criteria:\n- Minimum overall CGPA: 6.50 without any active backlogs at the commencement of the...",
+          "score": 0.372
+        },
+        {
+          "documentId": "6nkfddkamt9q8jqu",
+          "documentName": "Placement Guidelines, Internships & Scholarship Schemes",
+          "page": 5,
+          "category": "Placements",
+          "department": "General / College-wide",
+          "snippet": "between 9.25 and 9.74 in the preceding academic year.\n- Academic Merit Scholarship: 25% tuition fee waiver for students maintaining a CGPA between 8.75 and 9.24.\n\n\n2.2. Need-Based ...",
+          "score": 0.347
+        },
+        {
+          "documentId": "021da3chmt9q8jpt",
+          "documentName": "Official Academic Regulations & Examination Rules 2026",
+          "page": 3,
+          "category": "Academics",
+          "department": "General / College-wide",
+          "snippet": "Medical Officer) or representation of the College in State/National sports and cultural events. A condonation fee of $50 / Rs. 1,500 per course applies.\n\n\n1.3. Detainment:\n\nStudent...",
+          "score": 0.336
+        }
+      ],
+      "retrievalMetadata": {
+        "chunksRetrieved": 5,
+        "retrievalScoreMin": 0.23639515796981328,
+        "retrievalScoreMax": 0.3519036423997545,
+        "provider": "local-engine",
+        "modelUsed": "grounded-rag-synthesizer",
+        "responseTimeMs": 0,
+        "fallbackUsed": true
+      },
+      "createdAt": "2026-08-26T06:49:53.160Z",
+      "updatedAt": "2026-08-26T06:49:53.160Z"
+    }
+  ],
+  "feedback": [
+    {
+      "_id": "5v10fur7mt9q8jrs",
+      "id": "sr0cypxjmt9q8jrs",
+      "userId": "vplvsrbwmt9q8jpq",
+      "messageId": "d32hblbpmt9q8jrr",
+      "conversationId": "yso6mfxxmt9q8jrp",
+      "rating": "helpful",
+      "comment": "Very clear and cited the exact section and condonation fee!",
+      "createdAt": "2026-08-26T06:42:42.328Z"
+    }
+  ],
+  "processingJobs": [
+    {
+      "_id": "iqspkqebmt9q8jpw",
+      "id": "ofolsidzmt9q8jpw",
+      "documentId": "021da3chmt9q8jpt",
+      "status": "PROCESSING",
+      "stage": "EXTRACTING_TEXT",
+      "progress": 10,
+      "startedAt": "2026-08-26T06:42:42.260Z"
+    },
+    {
+      "_id": "i9xj552wmt9q8jqg",
+      "id": "8zt5dtkgmt9q8jqg",
+      "documentId": "bbdesq87mt9q8jqe",
+      "status": "PROCESSING",
+      "stage": "EXTRACTING_TEXT",
+      "progress": 10,
+      "startedAt": "2026-08-26T06:42:42.280Z"
+    },
+    {
+      "_id": "m7qujrsqmt9q8jqv",
+      "id": "elohzv0fmt9q8jqv",
+      "documentId": "6nkfddkamt9q8jqu",
+      "status": "PROCESSING",
+      "stage": "EXTRACTING_TEXT",
+      "progress": 10,
+      "startedAt": "2026-08-26T06:42:42.295Z"
+    },
+    {
+      "_id": "6qwhb2ufmt9q8jrb",
+      "id": "9zxvcus1mt9q8jrb",
+      "documentId": "ms31xgljmt9q8jra",
+      "status": "PROCESSING",
+      "stage": "EXTRACTING_TEXT",
+      "progress": 10,
+      "startedAt": "2026-08-26T06:42:42.311Z"
+    }
+  ]
+}

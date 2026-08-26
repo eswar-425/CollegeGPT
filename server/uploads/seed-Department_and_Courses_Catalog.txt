@@ -1,0 +1,40 @@
+# APEX INSTITUTE OF TECHNOLOGY & SCIENCE
+## ACADEMIC DEPARTMENTS, COURSE CATALOG & CONTACT DIRECTORY (2026-2027)
+
+### 1. DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING (CSE)
+- Head of Department: Dr. Robert Vance (Office: Block A, Room 304, Email: hod.cse@apexcollege.edu)
+- Offered Programs:
+  - B.Tech in Computer Science & Engineering (Intake: 240 seats)
+  - B.Tech in Artificial Intelligence & Machine Learning (Intake: 120 seats)
+  - B.Tech in Cyber Security & Data Privacy (Intake: 60 seats)
+  - M.Tech in Advanced Software Systems (Intake: 30 seats)
+- Core Laboratories: High Performance Computing Lab, NVIDIA Deep Learning Studio, IoT & Embedded Systems Lab, Cloud Virtualization Center.
+
+---
+
+### 2. DEPARTMENT OF ELECTRONICS & COMMUNICATION ENGINEERING (ECE)
+- Head of Department: Dr. Sophia Martinez (Office: Block B, Room 201, Email: hod.ece@apexcollege.edu)
+- Offered Programs:
+  - B.Tech in Electronics & Communication Engineering (Intake: 180 seats)
+  - B.Tech in VLSI Design & Microelectronics (Intake: 60 seats)
+  - M.Tech in Embedded Systems & IoT (Intake: 24 seats)
+- Core Laboratories: Cadence VLSI Research Lab, Microwave & RF Testing Lab, Signal Processing Lab.
+
+---
+
+### 3. DEPARTMENT OF MECHANICAL ENGINEERING (ME)
+- Head of Department: Dr. Alan Turing (Office: Block C, Room 102, Email: hod.mech@apexcollege.edu)
+- Offered Programs:
+  - B.Tech in Mechanical Engineering (Intake: 120 seats)
+  - B.Tech in Robotics & Industrial Automation (Intake: 60 seats)
+- Core Laboratories: Advanced CNC Machining Center, Additive Manufacturing & 3D Printing Lab, Thermal Engineering & Wind Tunnel Lab.
+
+---
+
+### 4. KEY ADMINISTRATIVE CONTACTS
+- Dean of Academic Affairs: Dr. Eleanor Vance (dean.academics@apexcollege.edu)
+- Controller of Examinations (COE): Prof. Arthur Pendelton (coe@apexcollege.edu)
+- Chief Hostel Warden (Boys): Dr. Marcus Brown (warden.boys@apexcollege.edu)
+- Chief Hostel Warden (Girls): Dr. Priya Sharma (warden.girls@apexcollege.edu)
+- Training & Placement Officer (TPO): Mr. David Miller (placements@apexcollege.edu)
+- Student Welfare Grievance Cell: grievance@apexcollege.edu / Emergency Toll-Free: 1800-456-7890
