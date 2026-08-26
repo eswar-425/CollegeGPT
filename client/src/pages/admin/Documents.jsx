@@ -109,23 +109,23 @@ export default function Documents() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6 animate-fade-in transition-colors duration-200">
+    <div className="w-full max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-5 sm:space-y-6 overflow-x-hidden transition-colors duration-200">
       {/* Header Bar */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-200 dark:border-slate-800">
-        <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-            <FileText className="w-6 h-6 text-brand-600 dark:text-brand-400" />
-            Knowledge Base Documents
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-5 border-b border-slate-200 dark:border-slate-800 w-full">
+        <div className="min-w-0 flex-1">
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2 flex-wrap">
+            <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-brand-600 dark:text-brand-400 shrink-0" />
+            <span>Knowledge Base Documents</span>
           </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
             Manage institutional documents, inspect extracted semantic chunks, and re-index vector representations.
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 w-full sm:w-auto justify-start sm:justify-end shrink-0">
           <button
             onClick={fetchDocuments}
-            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 transition-colors shadow-sm dark:shadow-none"
+            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 transition-colors shadow-sm dark:shadow-none shrink-0"
             title="Refresh list"
           >
             <RotateCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
@@ -133,36 +133,36 @@ export default function Documents() {
 
           <Link
             to="/admin/documents/upload"
-            className="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold shadow-md shadow-brand-600/25 transition-all flex items-center gap-1.5"
+            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold shadow-md shadow-brand-600/25 transition-all flex items-center justify-center gap-1.5"
           >
             <Upload className="w-3.5 h-3.5" />
-            Upload Document
+            <span>Upload Document</span>
           </Link>
         </div>
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 shadow-sm dark:shadow-lg">
+      <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex flex-col gap-3 shadow-sm dark:shadow-lg w-full">
         {/* Search Form */}
-        <form onSubmit={handleSearchSubmit} className="w-full sm:flex-1 relative">
+        <form onSubmit={handleSearchSubmit} className="w-full relative">
           <Search className="w-4 h-4 text-slate-400 dark:text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             placeholder="Search by title or filename..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
+            className="w-full pl-10 pr-4 py-2.5 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors"
           />
         </form>
 
         {/* Dropdown Filters */}
-        <div className="flex flex-wrap items-center gap-2 text-xs">
-          <div className="flex items-center gap-1 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-1.5">
-            <Tag className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs w-full">
+          <div className="flex items-center gap-1.5 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-2 min-w-0">
+            <Tag className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400 shrink-0" />
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none"
+              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none w-full truncate"
             >
               {CATEGORIES.map((c) => (
                 <option key={c} value={c} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
@@ -172,12 +172,12 @@ export default function Documents() {
             </select>
           </div>
 
-          <div className="flex items-center gap-1 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-1.5">
-            <Building2 className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+          <div className="flex items-center gap-1.5 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-2 min-w-0">
+            <Building2 className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none"
+              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none w-full truncate"
             >
               {DEPARTMENTS.map((d) => (
                 <option key={d} value={d} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
@@ -187,12 +187,12 @@ export default function Documents() {
             </select>
           </div>
 
-          <div className="flex items-center gap-1 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-1.5">
-            <Filter className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
+          <div className="flex items-center gap-1.5 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700 rounded-xl px-2.5 py-2 min-w-0">
+            <Filter className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" />
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none"
+              className="bg-transparent text-slate-800 dark:text-slate-200 focus:outline-none w-full truncate"
             >
               <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">All Statuses</option>
               <option value="READY" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">Ready</option>
