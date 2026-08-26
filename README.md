@@ -9,6 +9,21 @@
 
 ---
 
+> [!TIP]
+> ### 🔑 Default Admin & Student Credentials
+> - **👑 Administrator Account**:
+>   - **Email**: `admin@college.edu`
+>   - **Password**: `Admin@12345`
+>   - **Access**: Full Administrator Hub, Document Ingestion Manager, Chunk Inspector & Diagnostics
+> - **🎓 Student Account**:
+>   - **Email**: `student@college.edu`
+>   - **Password**: `Student@12345`
+>   - **Access**: Grounded RAG Chat Assistant, Verified Citations & Topic Discovery
+>
+> *(Or register a new student account with your own college name on the live site!)*
+
+---
+
 ## 1. Project Name
 
 **CollegeGPT** — An intelligent, grounded AI Campus Information Assistant built on **Retrieval-Augmented Generation (RAG)** for university regulations, fee structures, academic circulars, hostel guidelines, and placement policies.
