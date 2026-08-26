@@ -196,6 +196,7 @@ export default function Chat() {
             onSelectConversation={handleSelectConversation}
             onNewChat={handleNewChat}
             onDeleteConversation={handleDeleteConversation}
+            onClose={() => setSidebarOpen(false)}
             isLoading={loadingConversations}
           />
         )}
